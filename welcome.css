@@ -1,0 +1,104 @@
+/* Phong cách mặc định cho header */
+.header {
+    background-image: url('../img/welcome/trang3-1.png');
+    background-size: cover; /* Đảm bảo ảnh nền phủ đầy chiều rộng và cắt bớt 2 đầu */
+    background-position: center; /* Đặt ảnh nền ở trung tâm theo chiều dọc */
+    height: 1150px; /* Đặt chiều cao của phần tử header */
+    width: 100%; /* Đặt chiều rộng của phần tử header */
+    position: relative; /* Đảm bảo vị trí tương đối cho con */
+}
+/* Phong cách cho logo */
+.logo {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Căn giữa logo theo cả chiều ngang và dọc */
+    max-width: 200px; /* Điều chỉnh kích thước logo */
+    height: auto;
+    border-radius: 50%; /* Làm cho logo thành hình tròn */
+}
+
+.navbar {
+    position: absolute;
+    top: 30%;
+    left: 80%; /* Căn chỉnh giữa màn hình */
+    transform: translateX(-50%); /* Căn giữa thanh navbar */
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Chiều rộng toàn bộ màn hình */
+    z-index: 2; /* Đảm bảo nó nằm trên nền */
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between; /* Khoảng cách đều giữa các mục */
+    width: 40%; /* Đặt chiều rộng của ul để tạo khoảng cách hai bên */
+    padding: 0; /* Xóa đệm mặc định */
+    margin: 0; /* Xóa lề mặc định */
+}
+
+.navbar li {
+    font-size: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: hsla(0, 2%, 41%, 1);
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+.navbar-hr {
+    border: none; /* Loại bỏ đường viền */
+    height: 2px; /* Độ dày của đường ngang */
+    background-color: hsla(0, 0%, 85%, 1); /* Màu nền của đường ngang */
+    width: 50%; /* Đặt chiều rộng của đường ngang */
+    margin: 50px auto; /* Căn giữa và thêm khoảng cách trên dưới */
+    z-index: 1; /* Đảm bảo nó nằm dưới navbar */
+    position: relative;
+    left:-900px;
+}
+/* Phong cách cho dòng chữ "Welcome" */
+
+.welcome-text {
+    display: block;
+    text-align: center;
+    color: green; /* Màu chữ */
+    font-size: 79px; /* Kích thước chữ */
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    left: 50%; /* Đặt ở giữa theo chiều ngang */
+    bottom: 450px; /* Đặt ở dưới cùng */
+    transform: translateX(-50%); /* Dịch chuyển về trung tâm */
+}
+.welcome-text2 {
+    display: block;
+    text-align: center;
+    color: green; /* Màu chữ */
+    font-size: 59px; /* Kích thước chữ */
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    left: 50%; /* Đặt ở giữa theo chiều ngang */
+    bottom: 350px; /* Đặt ở dưới cùng */
+    transform: translateX(-50%); /* Dịch chuyển về trung tâm */
+}
+.nut {
+    position: absolute;
+    left: 50%;
+    bottom: 250px; /* Đặt ở dưới cùng */
+    transform: translateX(-50%); /* Dịch chuyển về trung tâm theo chiều ngang */
+    width: 300px; /* Độ rộng của nút */
+    height: 60px; /* Chiều cao của nút */
+    font-size: 20px; /* Kích thước chữ của nút */
+    background-color: hsla(108, 43%, 50%, 1); /* Màu nền của nút */
+    color: #fff; /* Màu chữ của nút */
+    border: none; /* Loại bỏ viền */
+  
+    cursor: pointer; /* Biến con trỏ thành bàn tay khi di chuột qua nút */
+}
+
+.nut:hover {
+    background-color: #0056b3; /* Màu nền của nút khi di chuột qua */
+}
+

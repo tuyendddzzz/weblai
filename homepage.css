@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../img/homepage/background.png");
+    width: 100%;
+    background-size:cover;
+        background-repeat: no-repeat;
+
+}
+.text_content1{
+    /* Get all of your important agricultural supplies and fertilizers seed in one place. */
+
+position: absolute;
+width: 583px;
+height: 136px;
+left: 175px;
+top: 150px;
+
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 38px;
+display: flex;
+align-items: center;
+
+color: #000000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.text_content2{
+    /* Our major goal is to give all of the items in one location so that farmers can easily purchase seeds and fertilizers while also providing the necessary seed and product knowledge. */
+
+position: absolute;
+width: 556px;
+height: 113px;
+left:  175px;
+top: 250px;
+
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 19px;
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+}
+.button{
+    /* Sign in */
+
+width: 277px;
+height: 56px;
+
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 38px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FBFBFE;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+/* Frame 14 */
+
+box-sizing: border-box;
+margin-top: -70px;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: center;
+align-items: center;
+/* padding: 0px; */
+gap: 10px;
+
+position: absolute;
+width: 256px;
+height: 56px;
+left: 180px;
+top: 435px;
+
+background: #5EB649;
+border: 1px solid #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+text-decoration: none;
+}
+.img_content{
+    /* Frame 13 */
+
+position: absolute;
+width: 418px;
+height:700px;
+left: 900px;
+top: 0px;
+
+background: url("../web_nongsan/asset/img/homepage//Frame 13.png");
+
+
+}
+.img_content1{
+/* Frame 18 */
+
+position: absolute;
+width: 314.96px;
+height: 206.3px;
+left: 703.47px;
+top: 493.22px;
+
+background: url(.jpg), #FFFFFF;
+
+
+
+}

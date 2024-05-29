@@ -1,0 +1,286 @@
+body {
+  background-color: #d6e8d4;
+  font-family: Arial, sans-serif;
+  margin: 0; /* Xóa lề mặc định */
+  padding: 0; /* Xóa đệm mặc định */
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Chiều cao toàn bộ màn hình hiển thị */
+  overflow: hidden;
+}
+
+.nen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Đảm bảo nó nằm dưới các phần tử khác */
+}
+
+.nen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Đảm bảo hình ảnh bao phủ toàn bộ nền */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(152, 201, 151, 0.5); /* Lớp phủ trắng với độ trong suốt 50% */
+  z-index: 1; /* Đặt lớp phủ trên hình ảnh */
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2; /* Đảm bảo nó nằm trên nền và lớp phủ */
+}
+
+.logo img {
+  max-width: 80px; /* Điều chỉnh kích thước của logo */
+  max-height: 80px; /* Giữ tỷ lệ khung hình */
+  border-radius: 50%; /* Làm cho logo hình tròn */
+}
+
+.navbar {
+  position: absolute;
+  top: 57px;
+  left: 50%;
+  transform: translateX(-50%); /* Căn giữa thanh navbar */
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Chiều rộng toàn bộ màn hình */
+  z-index: 2; /* Đảm bảo nó nằm trên nền */
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between; /* Khoảng cách đều giữa các mục */
+  width: 40%; /* Đặt chiều rộng của ul để tạo khoảng cách hai bên */
+  padding: 0; /* Xóa đệm mặc định */
+  margin: 0; /* Xóa lề mặc định */
+}
+
+.navbar li {
+  font-size: x-large;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+.navbar-hr {
+  border: none; /* Loại bỏ đường viền */
+  height: 1px; /* Độ dày của đường ngang */
+  background-color: hsla(0, 9%, 75%, 0.86); /* Màu nền của đường ngang */
+  margin: 110px 0; /* Khoảng cách giữa đường ngang và các phần khác */
+  z-index: 2; /* Đảm bảo nó nằm trên nền */
+  position: relative;
+}
+
+.secondary-navbar {
+  position: absolute;
+  top: 130px; /* Đặt vị trí bên dưới thanh navbar chính */
+  left: 50%;
+  transform: translateX(-50%); /* Căn giữa thanh navbar */
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Chiều rộng toàn bộ màn hình */
+  z-index: 2; /* Đảm bảo nó nằm trên nền */
+}
+
+.secondary-navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between; /* Khoảng cách đều giữa các mục */
+  width: 40%; /* Đặt chiều rộng của ul để tạo khoảng cách hai bên */
+  padding: 0; /* Xóa đệm mặc định */
+  margin: 0; /* Xóa lề mặc định */
+}
+
+.secondary-navbar li {
+  font-size: x-large;
+}
+
+.secondary-navbar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.secondary-navbar a:hover {
+  color: #007bff;
+}
+
+.mauchu {
+  color: hsla(119, 92%, 24%, 1);
+}
+
+.container {
+  position: absolute;
+  top: 200px; /* Điều chỉnh vị trí của container để nằm trên nền */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: flex-start;
+  z-index: 3; /* Đảm bảo nó nằm trên nền và các phần tử khác */
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 20px; /* Khoảng cách giữa hai cột */
+}
+
+.rectangle {
+  width: 45vw; /* Đặt chiều rộng của hình chữ nhật là 40% chiều rộng của màn hình */
+  height: 70vh; /* Đặt chiều cao của hình chữ nhật là 70% chiều cao của màn hình */
+  background-color: #ffffff;
+  border: 2px solid #f7f3f3;
+  margin: 10px 0; /* Khoảng cách giữa các hình chữ nhật */
+  display: flex;
+  flex-direction: column; /* Sắp xếp các khung bên trong theo chiều dọc */
+  justify-content: center;
+  align-items: center;
+  z-index: 3; /* Đảm bảo nó nằm trên nền */
+  
+}
+
+.inner-box {
+  width: 80%; /* Đặt chiều rộng của khung bên trong */
+  height: 20%; /* Đặt chiều cao của khung bên trong */
+  background-color: #ffffff; /* Màu nền của khung bên trong */
+  border: 1px solid  rgba(194, 191, 191, 0.726); /* Viền của khung bên trong */
+  margin: 30px 0; /* Khoảng cách giữa các khung bên trong */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.inner-box img{
+  max-width: calc(100% - 20px); /* Giảm 20px khoảng cách từ trái và phải của ảnh */
+    max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước của khung */
+    max-height: 90%; /* Đảm bảo ảnh không vượt quá kích thước của khung */
+    margin-right: 70%; /* Đẩy ảnh sang trái bằng cách chèn khoảng trắng vào bên phải */
+}
+.inner-box {
+  position: relative; /* Thêm thuộc tính position */
+  width: 80%;
+  height: 20%;
+  background-color: #ffffff;
+  border: 1px solid rgba(194, 191, 191, 0.726);
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nut-buy {
+  background-color:  hsla(119, 61%, 58%, 1);
+  color: rgb(240, 243, 240);
+  border: none;
+  padding: 9px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute; /* Thêm thuộc tính position */
+  top: 80%; /* Đặt vị trí theo trục y tại 50% */
+  left: 200px; /* Đặt vị trí theo trục x bên phải */
+  transform: translateY(-50%); /* Dịch nút mua lên trên 50% để căn giữa theo trục y */
+  font-size: medium; /* Chỉnh kích thước chữ lớn hơn */
+}
+.nut-add-to-cart {
+  background-color: green;
+  color: rgb(240, 243, 240);
+  border: none;
+  padding: 8px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute; /* Thêm thuộc tính position */
+  top: 60%; /* Đặt vị trí theo trục y tại 50% */
+  left: 500px; /* Đặt vị trí theo trục x bên phải */
+  margin-top: 10px; /* Thêm khoảng cách giữa các nút */
+  font-size:medium; /* Chỉnh kích thước chữ lớn hơn */
+}
+
+.nut-add-to-cart {
+  background-color:  hsla(119, 61%, 58%, 1); /* Màu sắc của nút Add to Cart */
+}
+
+
+.nut-add-to-cart::after {
+  content: ""; /* Thêm nội dung giả */
+  background-image: url('../img/rainypg/giohang.png'); /* Đường dẫn đến biểu tượng giỏ hàng */
+  background-size: cover; /* Phủ toàn bộ kích thước của phần tử */
+  position: absolute; /* Thêm thuộc tính position */
+  width: 20px; /* Đặt chiều rộng của biểu tượng */
+  height: 20px; /* Đặt chiều cao của biểu tượng */
+  top: 50%; /* Đặt vị trí theo trục y */
+  left: 80%; /* Đặt vị trí theo trục x */
+  transform: translate(-50%, -50%); /* Dịch chuyển biểu tượng vào giữa */
+}
+
+.nut-add-to-cart::after {
+  width: 20px; /* Đặt chiều rộng của biểu tượng */
+  height: 20px; /* Đặt chiều cao của biểu tượng */
+}
+.price-label {
+  position: absolute;
+  top: 60px; /* Đặt vị trí lên trên so với nút */
+  left: 82%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8); /* Màu nền của nhãn giá */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+
+}
+.gren{
+  position: absolute;
+  top: 5px; /* Đặt vị trí lên trên so với nút */
+  left: 35%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8); /* Màu nền của nhãn giá */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 20px ;
+}
+.pack{
+  position: absolute;
+  top: 40px; /* Đặt vị trí lên trên so với nút */
+  left: 52%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8); /* Màu nền của nhãn giá */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.yeuthich {
+  position: absolute;
+  top: 10px;
+  right: -470px;
+  width: 20px;
+  height: 20px;
+}
+.back-link {
+  position: fixed;
+  top: 20px; /* Điều chỉnh giá trị top tùy thích */
+  left: 20px; /* Điều chỉnh giá trị left tùy thích */
+  z-index: 999; /* Đảm bảo mũi tên nằm trên các phần tử khác */
+  color: #000; /* Màu chữ của mũi tên */
+  text-decoration: none; /* Loại bỏ gạch chân */
+  font-size: 30px;
+}
+

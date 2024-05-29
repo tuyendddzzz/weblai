@@ -1,0 +1,138 @@
+body {
+  background-color: #d6e8d4;
+  font-family: Arial, sans-serif;
+}
+.vector {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it is on top of other elements */
+}
+.navbar {
+  position: absolute;
+  align-items: center;
+  display: flex;
+  top: 57px;
+  left: 382px;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 80px;
+  font-size: x-large;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 20px; /* Khoảng cách giữa hai cột */
+}
+
+
+.rectangle img {
+  width: 280px; /* Đặt kích thước của ảnh */
+  height: 280px; /* Giữ tỉ lệ khung hình */
+}
+.logo img {
+  max-width: 100px; /* Điều chỉnh kích thước của logo */
+  max-height: 100px; /* Giữ tỉ lệ khung hình */
+  border-radius: 50%; /* Make the logo circular */
+
+}
+
+.mauchu{
+  color:green
+}
+.hinh {
+  position:absolute;
+  top: 160px; /* Điều chỉnh khoảng cách từ trên xuống */
+  right: 50px; /* Điều chỉnh khoảng cách từ phải sang trái */
+  background-size: cover;
+}
+
+.hinh img {
+  
+    width: 400px; /* Đặt chiều rộng mong muốn */
+    height: 870px; /* Đặt chiều cao mong muốn */
+    object-fit: cover; /* Đảm bảo hình ảnh bao phủ khu vực mà không bị biến dạng */
+  
+  
+}
+.navbar-hr {
+  border: none; /* Loại bỏ đường viền */
+  height: 1px; /* Độ dày của horizontal rule */
+  background-color: #eeeeee98; /* Màu nền của horizontal rule */
+  margin: 10px 0; /* Khoảng cách giữa horizontal rule và các phần khác */
+}
+.buy-button{
+  background-color: hsla(108, 43%, 50%, 1);
+  ;
+  color: rgb(240, 243, 240);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.rectangle {
+  width: 400px;
+  height: 400px;
+  background-color: #ffffff;
+  border: 2px solid #fffdfd;
+  margin: 20px 0; /* Khoảng cách giữa các hình chữ nhật */
+  display: flex;
+  flex-direction: column; /* Ensures image is above button */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Để đảm bảo ảnh không tràn ra ngoài */
+}
+
+.rectangle img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 0px; /* Điều chỉnh margin-top âm để lệch hình ảnh lên trên */
+}
+
+.buy-button {
+  background-color: hsla(108, 43%, 50%, 1);
+  ;
+  color: rgb(240, 243, 240);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Creates space between the image and button */
+  border-radius: 0;
+  font-size: 20px;
+}
+.back-link {
+  position: fixed;
+  top: 20px; /* Điều chỉnh giá trị top tùy thích */
+  left: 20px; /* Điều chỉnh giá trị left tùy thích */
+  z-index: 999; /* Đảm bảo mũi tên nằm trên các phần tử khác */
+  color: #000; /* Màu chữ của mũi tên */
+  text-decoration: none; /* Loại bỏ gạch chân */
+  font-size: 30px;
+}
+
+
